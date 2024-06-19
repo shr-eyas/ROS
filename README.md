@@ -30,17 +30,36 @@ source ~/.bashrc
     source devel/setup.bash
     ```
 
-> [!NOTE]
-> Your package structure should look like this:
-
-
 ### Create a ROS Package
-1. Navigate to the `src` directory within your workspace:
-2. Create a new package:
-3. Build the workspace:
-4. Source the setup file again:
-5. You can view first-order dependencies in `package.xml`:
 
+1. Navigate to the `src` directory within your workspace:
+    ```bash
+    cd src
+    ```
+    
+2. Create a new package:
+    ```bash
+    catkin_create_pkg package_name std_msgs rospy roscpp
+    ```
+    
+3. Build the workspace:
+    ```bash
+    cd ..
+    catkin_make
+    ```
+    
+4. Source the setup file again:
+    ```bash
+    source devel/setup.bash
+    ```
+
+5. You can view first-order dependencies in `package.xml`:
+    ```xml
+    <build_depend>roscpp</build_depend>
+    <build_depend>rospy</build_depend>
+    <build_depend>std_msgs</build_depend>
+    ```
+    
 > [!NOTE]
 > Your workspace structure should look like this:
 > ```
