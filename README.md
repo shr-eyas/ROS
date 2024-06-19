@@ -119,7 +119,10 @@ source ~/.bashrc
     ```
 
 > [!IMPORTANT]
-> Key information users need to know to achieve their goal.
+> `roscore` is the first thing you should run when using ROS.
+> ```bash
+> roscore
+> ```
 
 
 <!---
