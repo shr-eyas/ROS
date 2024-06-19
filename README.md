@@ -106,6 +106,10 @@ source ~/.bashrc
 
 4. Modify CMakeLists.txt to install the Python node:
     ```cmake
+    catkin_package(
+      CATKIN_DEPENDS roscpp rospy std_msgs
+    )
+    
     catkin_install_python(PROGRAMS
       scripts/node_name.py
       DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
