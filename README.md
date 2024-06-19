@@ -122,12 +122,27 @@ source ~/.bashrc
     catkin_make
     ```
 
+### Run ROS Node
+
 > [!IMPORTANT]
 > `roscore` is the first thing you should run when using ROS.
 > ```bash
 > roscore
 > ```
 
+1. Make sure that a `roscore` is up and running:
+   ```bash
+   roscore
+   ```
+2. Source the workspace's `setup.sh` file
+   ```bash
+   cd ~/catkin_ws
+   source ./devel/setup.bash
+   ```
+3. Run the node!
+   ```bash
+   rosrun workspace_name node_name.py 
+   ```
 
 <!---
 
