@@ -124,12 +124,6 @@ source ~/.bashrc
 
 ### Run ROS Node
 
-> [!IMPORTANT]
-> `roscore` is the first thing you should run when using ROS.
-> ```bash
-> roscore
-> ```
-
 1. Make sure that a `roscore` is up and running:
    ```bash
    roscore
@@ -143,6 +137,13 @@ source ~/.bashrc
    ```bash
    rosrun workspace_name node_name.py 
    ```
+   
+> [!IMPORTANT]
+> `roscore` is the first thing you should run when using ROS.
+> ```bash
+> roscore
+> ```
+
 
 <!---
 
