@@ -128,11 +128,13 @@ source ~/.bashrc
    ```bash
    roscore
    ```
+
 2. Source the workspace's `setup.sh` file
    ```bash
-   cd ~/catkin_ws
-   source ./devel/setup.bash
+   cd workspace_name
+   source devel/setup.bash
    ```
+
 3. Run the node!
    ```bash
    rosrun workspace_name node_name.py 
@@ -149,8 +151,6 @@ source ~/.bashrc
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
-
-
 
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.
