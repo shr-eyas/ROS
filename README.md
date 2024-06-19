@@ -2,7 +2,7 @@ _A personal guide to refer while working on ROS `Noetic` and ROS2 `Humble`_
 
 ## ROS Noetic
 
-### Manage your Environment 
+### A. Manage your Environment 
 
 First, source the ROS Noetic environment setup file. It's recommended to add this to your `.bashrc` file for automatic sourcing:
 ```bash
@@ -16,7 +16,7 @@ source ~/.bashrc
 > source /opt/ros/kinetic/setup.bash
 > ```
 
-### Create a ROS Workspace
+### B. Create a ROS Workspace
 
 1. Create a new workspace:
     ```bash
@@ -30,7 +30,7 @@ source ~/.bashrc
     source devel/setup.bash
     ```
 
-### Create a ROS Package
+### C. Create a ROS Package
 
 1. Navigate to the `src` directory within your workspace:
     ```bash
@@ -79,7 +79,7 @@ source ~/.bashrc
 >        package.xml       
 
 
-### Create a ROS Node
+### D. Create a ROS Node
 
 1. Inside your package, create a `scripts` directory:
     ```bash
@@ -122,7 +122,7 @@ source ~/.bashrc
     catkin_make
     ```
 
-### Run ROS Node
+### E. Run ROS Node
 
 1. Make sure that a `roscore` is up and running:
    ```bash
