@@ -62,6 +62,43 @@ source ~/.bashrc
 
 ### Create a ROS Node
 
+1. Inside your package, create a `scripts` directory:
+    ```bash
+    cd src/package_name
+    mkdir scripts
+    cd scripts
+    ```
+    
+2. Create a new Python node:
+    ```bash
+    touch node_name.py
+    chmod +x node_name.py
+    ```
+
+3. Add additional dependencies to `package.xml`:
+    ```xml
+    <build_depend>opencv</build_depend>
+    <build_depend>python3-numpy</build_depend>
+    <build_export_depend>opencv</build_export_depend>
+    <build_export_depend>python3-numpy</build_export_depend>
+    <exec_depend>opencv</exec_depend>
+    <exec_depend>python3-numpy</exec_depend>
+    ```
+
+4. Modify CMakeLists.txt to install the Python node:
+    ```cmake
+    catkin_install_python(PROGRAMS
+      scripts/node_name.py
+      DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+    )
+    ```
+    
+5. Go to the workspace and build it:
+    ```bash
+    cd ../../..
+    catkin_make
+    ```
+
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.
 
