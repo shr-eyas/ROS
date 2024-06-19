@@ -137,7 +137,7 @@ source ~/.bashrc
 
 3. Run the node!
    ```bash
-   rosrun workspace_name node_name.py 
+   rosrun package_name node_name.py 
    ```
    
 > [!IMPORTANT]
