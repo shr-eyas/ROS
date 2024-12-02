@@ -25,6 +25,9 @@ _A personal guide to refer while working on ROS `Noetic` and ROS2 `Humble`_
     colcon build
     ```
 
+### B. Create a ROS Package
+
+
 ## ROS Noetic
 
 ### A. Manage your Environment 
