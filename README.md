@@ -12,7 +12,7 @@ _A personal guide to refer while working on ROS `Noetic` and ROS2 `Humble`_
     ```
 
 > [!NOTE]
-> From root of your workspace 
+> Next two steps to be done from the root of your workspace 
 
 2. Resolve dependencies:
     ```bash
