@@ -5,8 +5,25 @@ _A personal guide to refer while working on ROS `Noetic` and ROS2 `Humble`_
 
 ### A. Create a ROS Workspace
 
+1. Create a new workspace:
+    ```bash
+    mkdir -p workspace_name/src
+    cd workspace_name
+    ```
 
+> [!NOTE]
+> From root of your workspace 
 
+2. Resolve dependencies:
+    ```bash
+    cd ..
+    rosdep install -i --from-path src --rosdistro humble -y
+    ```
+        
+3. Build the workspace with colcon:
+    ```bash
+    colcon build
+    ```
 
 ## ROS Noetic
 
