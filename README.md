@@ -7,7 +7,7 @@ _A personal guide to refer while working on ROS `Noetic` and ROS2 `Humble`_
 > For Auto Completion
 > ```bash
 > cd /usr/share/colcon_argcomplete/hook
-> add "colcon-argcomplete.bash" in gedit ~/.bashrc
+> add "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" in gedit ~/.bashrc
 
 
 ### A. Create a ROS Workspace
