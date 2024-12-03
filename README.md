@@ -3,6 +3,13 @@ _A personal guide to refer while working on ROS `Noetic` and ROS2 `Humble`_
 
 ## ROS Humble
 
+> [!NOTE]
+> For Auto Completion
+> ```bash
+> cd /usr/share/colcon_argcomplete/hook
+> add "colcon-argcomplete.bash" in gedit ~/.bashrc
+
+
 ### A. Create a ROS Workspace
 
 1. Create a new workspace:
@@ -11,7 +18,7 @@ _A personal guide to refer while working on ROS `Noetic` and ROS2 `Humble`_
     cd workspace_name
     ```
 
-> [!NOTE]
+> [!IMPORTANT]
 > Next two steps to be done from the root of your workspace 
 
 2. Resolve dependencies:
